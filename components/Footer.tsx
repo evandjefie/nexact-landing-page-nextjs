@@ -39,9 +39,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Liens rapides</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white opacity-80 hover:opacity-100 transition-opacity">Pourquoi</a></li>
-              <li><a href="#" className="text-white opacity-80 hover:opacity-100 transition-opacity">Avantages</a></li>
-              <li><a href="#" className="text-white opacity-80 hover:opacity-100 transition-opacity">Comment ça marche</a></li>
+              <li><a href="#about" className="text-white opacity-80 hover:opacity-100 transition-opacity">Pourquoi</a></li>
+              <li><a href="#benefits" className="text-white opacity-80 hover:opacity-100 transition-opacity">Avantages</a></li>
+              <li><a href="#howitwork" className="text-white opacity-80 hover:opacity-100 transition-opacity">Comment ça marche</a></li>
               <li><a href="#" className="text-white opacity-80 hover:opacity-100 transition-opacity">Témoignages</a></li>
               <li><a href="#" className="text-white opacity-80 hover:opacity-100 transition-opacity">FAQ</a></li>
             </ul>

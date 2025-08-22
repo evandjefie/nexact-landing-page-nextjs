@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-6">
               <a 
-                href="https://staging.nexact.ci/login"
+                href="https://app.nexact.ci/login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1" style={{ backgroundColor: 'var(--primary)' }}

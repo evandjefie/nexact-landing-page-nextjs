@@ -48,7 +48,7 @@ const Header: React.FC = () => {
               </div>
             </div>
             <a 
-              href="https://staging.nexact.ci/login"
+              href="https://app.nexact.ci/login"
               target="_blank"
               rel="noopener noreferrer"
               className="font-nunito border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-2 hover:bg-[#ff7e14] hover:text-white transition-colors"
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
               Se connecter
             </a>
             <a 
-              href="https://staging.nexact.ci/signup"
+              href="https://app.nexact.ci/signup"
               target="_blank"
               rel="noopener noreferrer"
               className="font-nunito bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-2 rounded-full transition-colors font-medium"
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
                   <option value="en">English</option>
                 </select>
                 <a 
-                href="https://staging.nexact.ci/login"
+                href="https://app.nexact.ci/login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-nunito w-full border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-3 hover:bg-[#ff7e14] hover:text-white transition-colors text-center"
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
                   Se connecter
                 </a>
                 <a 
-                href="https://staging.nexact.ci/signup"
+                href="https://app.nexact.ci/signup"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-nunito w-full bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-3 rounded-full transition-colors font-medium text-center"
