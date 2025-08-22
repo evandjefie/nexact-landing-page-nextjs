@@ -1,5 +1,6 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -11,9 +12,9 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="space-y-6">
               {/* <div className="text-2xl font-bold text-white mb-4">NEXACT</div> */}
-              <img src='/img/logo nexact blanc.svg' alt="NEXACT Logo" className=" h-8 w-16 h-full" />
+              <Image src='/img/logo nexact blanc.svg' alt="NEXACT Logo" className="h-8 w-16" width={64} height={32} />
               <p className="text-white opacity-80 leading-relaxed">
-                Évaluez, développez et certifiez vos compétences numériques, du débutant à l'expert.
+                Évaluez, développez et certifiez vos compétences numériques, du débutant à l&apos;expert.
               </p>
             </div>
             

@@ -1,4 +1,7 @@
 
+import React from 'react';
+import Image from 'next/image';
+
 const HowItWorkSection: React.FC = () => {
   const steps = [
     {
@@ -36,10 +39,12 @@ const HowItWorkSection: React.FC = () => {
           {/* Image */}
           <div className="flex-1">
             <div className="aspect-video w-full bg-gray-200 rounded-2xl">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=500"
                 alt="Bibliothèque et étude"
                 className="w-full object-contain rounded-lg shadow-md"
+                width={500}
+                height={300}
               />
             </div>
           </div>

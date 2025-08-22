@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const AboutSection: React.FC = () => {
   return (
@@ -11,17 +12,21 @@ const AboutSection: React.FC = () => {
               {/* Top left image */}
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img 
+                  <Image 
                     src="/img/nexact-student (1).jpg" 
                     alt="Professional man with tablet" 
                     className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img 
+                  <Image 
                     src="/img/nexact-student (2).jpg" 
                     alt="Smiling woman" 
                     className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
                   />
                 </div>
               </div>
@@ -29,17 +34,21 @@ const AboutSection: React.FC = () => {
               {/* Right side image */}
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img 
+                  <Image 
                     src="/img/nexact-student (4).jpg" 
                     alt="Professional woman in orange" 
                     className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img 
+                  <Image 
                     src="/img/nexact-student (3).jpg" 
                     alt="Professional woman in orange" 
                     className="w-full h-full object-cover"
+                    width={500}
+                    height={500}
                   />
                 </div>
               </div>

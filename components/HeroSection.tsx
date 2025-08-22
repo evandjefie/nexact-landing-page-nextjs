@@ -1,12 +1,13 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 
 const HeroSection: React.FC = () => {
   return (
     <section id="hero" className="bg-[#F4F4FB] py-20 lg:py-20 overflow-hidden">
       <div className="container relative">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center px-8 md:px-24">
           {/* Left Column - Text Content */}
           <div className="relative z-10 space-y-8">
             <div className="space-y-6 max-w-xl">
@@ -51,10 +52,12 @@ const HeroSection: React.FC = () => {
           {/* Right Column - Dashboard Preview */}
           <div className="flex-1">
             <div className="aspect-video w-full bg-gray-200 rounded-2xl">
-              <img
+              <Image
                 src="/img/nexact-dashboard.png"
                 alt="Dashboard NEXACT"
                 className="w-full object-contain rounded-lg"
+                width={800}
+                height={450}
               />
             </div>
           </div>

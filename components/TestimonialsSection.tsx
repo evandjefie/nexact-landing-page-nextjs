@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const TestimonialsSection: React.FC = () => {
@@ -55,7 +56,7 @@ const TestimonialsSection: React.FC = () => {
             Témoignages
           </h2>
           <p className="text-[#282828] opacity-70 leading-relaxed max-w-2xl mx-auto">
-            Nous sommes fiers de compter un nombre croissant de clients satisfaits. Voici ce qu'ils pensent de leur collaboration avec le NEXACT
+            Nous sommes fiers de compter un nombre croissant de clients satisfaits. Voici ce qu&apos;ils pensent de leur collaboration avec le NEXACT
           </p>
         </div>
 
@@ -66,14 +67,16 @@ const TestimonialsSection: React.FC = () => {
               <div key={index} className="bg-[#F7F7F7] rounded-2xl p-8 shadow-lg border border-gray-100 min-h-[200px] flex items-center transform transition-all duration-300 hover:scale-105">
                 <div className="w-full">
                   <blockquote className="font-nunito text-[#282828] opacity-80 leading-relaxed mb-8 text-lg">
-                    "{testimonials[index].text}"
+                    &quot;{testimonials[index].text}&quot;
                   </blockquote>
 
                   <div className="flex items-center gap-4">
-                    <img 
+                    <Image 
                       src={testimonials[index].avatar} 
                       alt={testimonials[index].name}
                       className="w-12 h-12 rounded-full object-cover"
+                      width={48}
+                      height={48}
                     />
                     <div>
                       <div className="font-clash font-semibold text-[#282828]">

@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,11 +10,12 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white sticky top-0 z-50">
       <div className="container">
-        <div className="flex justify-between items-center h-20">
+
+        <div className="flex justify-between items-center h-20 md:px-24">
           {/* Logo */}
           <div className="flex items-center">
             {/* <div className="font-clash text-2xl font-bold text-[#5454c2]">NEXACT</div> */}
-            <img src='/img/logo nexact.svg' alt="NEXACT Logo" className="ml-2 h-8" />
+            <Image src='/img/logo nexact.svg' alt="NEXACT Logo" className="ml-2 h-16" width={128} height={32} />
           </div>
 
           {/* Desktop Navigation */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FinalCTASection: React.FC = () => {
   // Array of profile images for the circular display
@@ -36,7 +37,7 @@ const FinalCTASection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1" style={{ backgroundColor: 'var(--primary)' }}
               >
-                C'est parti
+                C&apos;est parti
               </a>
             </div>
           </div>
@@ -53,10 +54,12 @@ const FinalCTASection: React.FC = () => {
                       transform: index === 4 ? 'scale(1.2)' : 'scale(1)'
                     }}
                   >
-                    <img
+                    <Image
                       src={image}
                       alt={`Professional ${index + 1}`}
                       className="w-full h-32 bg-gray-200 object-cover rounded-full object-contain"
+                      width={100}
+                      height={100}
                     />
                   </div>
                 ))}
