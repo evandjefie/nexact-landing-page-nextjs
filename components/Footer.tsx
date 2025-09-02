@@ -6,13 +6,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#5454c2] text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4 py-16">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mx-8 md:mx-4">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="space-y-6">
               {/* <div className="text-2xl font-bold text-white mb-4">NEXACT</div> */}
-              <Image src='/img/logo nexact blanc.svg' alt="NEXACT Logo" className="h-8 w-16" width={64} height={32} />
+              <Image src='/img/logo nexact blanc.svg' alt="NEXACT Logo" className="h-14 w-16" width={128} height={32} />
               <p className="text-white opacity-80 leading-relaxed">
                 Évaluez, développez et certifiez vos compétences numériques, du débutant à l&apos;expert.
               </p>

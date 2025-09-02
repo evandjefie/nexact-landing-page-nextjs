@@ -43,7 +43,7 @@ const FAQSection: React.FC = () => {
   return (
     <section className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 mx-8 md:mx-0">
           {/* Left Column - Header */}
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-6">

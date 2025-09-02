@@ -8,14 +8,11 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white sticky top-0 z-50">
-      <div className="container">
-
-        <div className="flex justify-between items-center h-20 md:px-24">
+      <header className="bg-white sticky top-0 z-50 ">
+        <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-30">
           {/* Logo */}
           <div className="flex items-center">
-            {/* <div className="font-clash text-2xl font-bold text-[#5454c2]">NEXACT</div> */}
-            <Image src='/img/logo nexact.svg' alt="NEXACT Logo" className="ml-2 h-16" width={128} height={32} />
+            <Image src='/img/logo nexact.svg' alt="NEXACT Logo" className="h-14 w-auto" width={128} height={32} />
           </div>
 
           {/* Desktop Navigation */}
@@ -47,20 +44,20 @@ const Header: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <a 
+            <a
               href="https://app.nexact.ci/login"
               target="_blank"
               rel="noopener noreferrer"
               className="font-nunito border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-2 hover:bg-[#ff7e14] hover:text-white transition-colors"
-              >
+            >
               Se connecter
             </a>
-            <a 
+            <a
               href="https://app.nexact.ci/signup"
               target="_blank"
               rel="noopener noreferrer"
               className="font-nunito bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-2 rounded-full transition-colors font-medium"
-              >
+            >
               Créer un compte
             </a>
           </div>
@@ -78,35 +75,38 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 px-4 bg-white rounded-2xl shadow-xl mt-4">
+          <div className="md:hidden py-6 px-4 bg-white rounded-2xl mt-4 mx-4">
             <div className="flex flex-col space-y-6">
-              <a href="#home" className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
+              <a href="#hero" onClick={() => setIsMenuOpen(false)} className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
                 Accueil
               </a>
-              <a href="#about" className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
-                À propos
+              <a href="#about" onClick={() => setIsMenuOpen(false)} className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
+                Pourquoi
               </a>
-              <a href="#features" className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
-                Caractéristiques
+              <a href="#benefits" onClick={() => setIsMenuOpen(false)} className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
+                Avantages
+              </a>
+              <a href="#howitwork" onClick={() => setIsMenuOpen(false)} className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
+                Comment ça marche
               </a>
               <div className="flex flex-col space-y-4 pt-6 border-t border-gray-100">
                 <select className="font-nunito w-full bg-white rounded-full px-4 py-3 text-[#282828] text-base focus:outline-none focus:ring-2 focus:ring-[#5454c2] focus:border-transparent appearance-none">
                   <option value="fr">French</option>
                   <option value="en">English</option>
                 </select>
-                <a 
-                href="https://app.nexact.ci/login"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-nunito w-full border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-3 hover:bg-[#ff7e14] hover:text-white transition-colors text-center"
+                <a
+                  href="https://app.nexact.ci/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-nunito w-full border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-3 hover:bg-[#ff7e14] hover:text-white transition-colors text-center"
                 >
                   Se connecter
                 </a>
-                <a 
-                href="https://app.nexact.ci/signup"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-nunito w-full bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-3 rounded-full transition-colors font-medium text-center"
+                <a
+                  href="https://app.nexact.ci/signup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-nunito w-full bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-3 rounded-full transition-colors font-medium text-center"
                 >
                   Créer un compte
                 </a>
@@ -114,8 +114,8 @@ const Header: React.FC = () => {
             </div>
           </div>
         )}
-      </div>
-    </header>
+      </header>
+
   );
 };
 

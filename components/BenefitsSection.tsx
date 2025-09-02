@@ -37,7 +37,7 @@ const BenefitsSection: React.FC = () => {
 
   return (
     <section id="benefits" className="py-16 lg:py-24 bg-[#FFFFFF]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-16 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-6">

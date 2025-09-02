@@ -12,7 +12,7 @@ const TestimonialsSection: React.FC = () => {
       text: "En quelques semaines, j’ai appris à sécuriser mes comptes et j’ai pu participer à une campagne citoyenne en ligne.",
       name: "Aïcha",
       role: "Etudiante - Abidjan",
-      avatar: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150"
+      avatar: "/img/nexact-student (9).svg"
     },
     {
       text: "L'intégration de NEXACT à mon programme de cours a été une véritable révolution. Mes élèves maîtrisent mieux les outils numériques et apprécient de suivre leurs progrès grâce au système de feedback de la plateforme.",
@@ -24,13 +24,13 @@ const TestimonialsSection: React.FC = () => {
       text: "NEXACT m'a permis de reprendre confiance en moi comprendre où j'en étais sur le plan numérique et m'a guidé sur mes axes d'amélioration. Les évaluations étaient pratiques, et obtenir un badge m'a procuré un réel sentiment d'accomplissement !",
       name: "Ouattara",
       role: "University Student",
-      avatar: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150"
+      avatar: "/img/nexact-student (8).svg"
     },
     {
       text: "L'intégration de NEXACT à mon programme de cours a été une véritable révolution. Mes élèves maîtrisent mieux les outils numériques et apprécient de suivre leurs progrès grâce au système de feedback de la plateforme.",
       name: "Mme. Attoumgbre Benedi",
       role: "School Teacher",
-      avatar: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150"
+      avatar: "/img/nexact-student (5).svg"
     }
   ];
 
@@ -49,7 +49,7 @@ const TestimonialsSection: React.FC = () => {
 
   return (
     <section id="testimonials" className="py-16 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-12 ">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-6">
@@ -71,7 +71,7 @@ const TestimonialsSection: React.FC = () => {
                   </blockquote>
 
                   <div className="flex items-center gap-4">
-                    <Image 
+                    <Image
                       src={testimonials[index].avatar} 
                       alt={testimonials[index].name}
                       className="w-12 h-12 rounded-full object-cover"
@@ -109,7 +109,7 @@ const TestimonialsSection: React.FC = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center mt-8 gap-2">
+        {/* <div className="flex justify-center mt-8 gap-2">
           {testimonials.map((_, index) => (
             <button
               key={index}
@@ -119,7 +119,7 @@ const TestimonialsSection: React.FC = () => {
               }`}
             />
           ))}
-        </div>
+        </div> */}
         <div className="text-center mt-8">
           <div className="font-nunito text-[#5454C2]">
             Note moyenne: ★★★★☆ 4.6/5 (1,542) - Basé sur les retours de nos premiers testeurs.

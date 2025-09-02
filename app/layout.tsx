@@ -11,6 +11,9 @@ const nunitoSans = Nunito({
 export const metadata: Metadata = {
   title: "NEXACT | Certification et développement des compétences numériques",
   description: "NEXACT : la plateforme ivoirienne de développement et de certification des compétences numériques. Évaluez vos aptitudes, suivez des parcours d'apprentissage personnalisés et obtenez des certifications officielles. Idéal pour étudiants, professionnels et citoyens.",
+  icons: {
+    icon: '/img/logo nexact.svg',
+  },
 };
 
 export default function RootLayout({
