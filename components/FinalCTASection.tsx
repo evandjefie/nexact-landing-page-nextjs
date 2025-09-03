@@ -44,7 +44,7 @@ const FinalCTASection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1" style={{ backgroundColor: 'var(--primary)' }}
               >
-                C'est parti
+                C&apos;est parti
               </a>
             </div>
           </div>
