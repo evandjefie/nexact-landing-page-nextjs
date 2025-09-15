@@ -8,15 +8,16 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-      <header className="bg-white sticky top-0 z-50 ">
-        <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-30">
+      <header className="bg-white sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex justify-between h-20 pr-4">
+          {/* <div className="flex lg:flex-row gap-12 mx-8 md:mx-0"> */}
           {/* Logo */}
           <div className="flex items-center">
             <Image src='/img/logo nexact.svg' alt="NEXACT Logo" className="h-14 w-auto" width={128} height={32} />
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-12">
+          <nav className="hidden md:flex items-center space-x-6">
             <a href="#hero" className="font-nunito text-base text-[#282828] hover:text-[#5454c2] transition-colors">
               Accueil
             </a>
@@ -44,22 +45,24 @@ const Header: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <a
-              href="https://app.nexact.ci/login"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-nunito border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-2 hover:bg-[#ff7e14] hover:text-white transition-colors"
-            >
-              Se connecter
-            </a>
-            <a
-              href="https://app.nexact.ci/signup"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-nunito bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-2 rounded-full transition-colors font-medium"
-            >
-              Créer un compte
-            </a>
+            <div className="flex flex-col sm:flex-row gap-6">
+              <a
+                href="https://app.nexact.ci/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-nunito border-2 border-[#ff7e14] rounded-full text-[#ff7e14] px-6 py-2 text-sm hover:bg-[#ff7e14] hover:text-white transition-colors"  
+              >
+                Se connecter
+              </a>
+              <a
+                href="https://app.nexact.ci/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-nunito bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-2 rounded-full transition-colors font-medium"
+              >
+                Créer un compte
+              </a>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -71,11 +74,12 @@ const Header: React.FC = () => {
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
+          {/* </div> */}
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 px-4 bg-white rounded-2xl mt-4 mx-4">
+          <div className="sm:hidden py-6 px-4 bg-white rounded-2xl mt-4 mx-4">
             <div className="flex flex-col space-y-6">
               <a href="#hero" onClick={() => setIsMenuOpen(false)} className="font-nunito text-lg text-[#282828] hover:text-[#5454c2] transition-colors">
                 Accueil

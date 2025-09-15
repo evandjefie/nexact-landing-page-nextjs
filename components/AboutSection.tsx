@@ -4,8 +4,8 @@ import Image from 'next/image';
 const AboutSection: React.FC = () => {
   return (
       <section id="about" className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-8 md:px-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mx-2 md:mx-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 mx-8 md:mx-0">
             {/* Left Column - Images */}
             <div className="relative order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
