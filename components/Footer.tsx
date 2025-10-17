@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
               </p>
               
               {/* Newsletter Signup */}
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 <input
                   type="email"
                   placeholder="Votre adresse email"
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                 <button className="w-full bg-[#ff7e14] hover:bg-[#e6711a] text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Abonnez-vous maintenant
                 </button>
-              </div>
+              </div> */}
             </div>
 
             
