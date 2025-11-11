@@ -81,14 +81,8 @@ const Footer: React.FC = () => {
               © 2025 NEXACT. Tous droits réservés.
             </div>
             <div className="flex items-center space-x-6 text-sm">
-              <a href="#" className="text-white opacity-70 hover:opacity-100 transition-opacity">
-                Mentions légales
-              </a>
-              <a href="#" className="text-white opacity-70 hover:opacity-100 transition-opacity">
-                Plan du site
-              </a>
-              <a href="#" className="text-white opacity-70 hover:opacity-100 transition-opacity">
-                Accessibilité
+              <a href="/terms" className="text-white opacity-70 hover:opacity-100 transition-opacity">
+                Termes et conditions
               </a>
             </div>
           </div>

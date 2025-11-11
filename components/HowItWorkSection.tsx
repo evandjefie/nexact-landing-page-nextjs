@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import MotionSection from './MotionSection';
 
 const HowItWorkSection: React.FC = () => {
   const steps = [
@@ -22,7 +23,7 @@ const HowItWorkSection: React.FC = () => {
   ];
   
   return (
-    <section id="howitwork" className="py-16 lg:py-24 bg-white">
+    <MotionSection id="howitwork" className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-12 sm:px-6 lg:px-8 ">
         {/* Conteneur pour le contenu et l'image (anciennement grid lg:grid-cols-2) */}
         <div className="flex flex-col lg:flex-row gap-16">
@@ -67,7 +68,7 @@ const HowItWorkSection: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 

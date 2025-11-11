@@ -1,11 +1,12 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import MotionSection from './MotionSection';
 
 
 const HeroSection: React.FC = () => {
   return (
-      <section id="hero" className="bg-[#F4F4FB] py-16 lg:py-24 overflow-hidden">
+      <MotionSection id="hero" className="bg-[#F4F4FB] py-16 lg:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 mx-8 md:mx-0">
             {/* Left Column - Text Content */}
@@ -53,7 +54,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </MotionSection>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import MotionSection from './MotionSection';
 
 const Features: React.FC = () => {
   const features = [
@@ -16,7 +17,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-12" style={{ backgroundColor: 'var(--secondary)' }}>
+    <MotionSection id="features" className="py-12" style={{ backgroundColor: 'var(--secondary)' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
@@ -31,7 +32,7 @@ const Features: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 

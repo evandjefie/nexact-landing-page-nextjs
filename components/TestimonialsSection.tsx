@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import MotionSection from './MotionSection';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -48,7 +49,7 @@ const TestimonialsSection: React.FC = () => {
   };
 
   return (
-    <section id="testimonials" className="py-16 lg:py-24 bg-white">
+    <MotionSection id="testimonials" className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-12 ">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -126,7 +127,7 @@ const TestimonialsSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 

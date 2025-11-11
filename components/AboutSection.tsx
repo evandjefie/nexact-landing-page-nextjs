@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import MotionSection from './MotionSection';
 
 const AboutSection: React.FC = () => {
   return (
-      <section id="about" className="py-16 lg:py-24 bg-white">
+      <MotionSection id="about" className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 mx-8 md:mx-0">
             {/* Left Column - Images */}
@@ -92,7 +93,7 @@ const AboutSection: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </MotionSection>
   );
 };
 

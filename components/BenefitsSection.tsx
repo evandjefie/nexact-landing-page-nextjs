@@ -5,6 +5,7 @@ import {
   Award, 
   Target 
 } from 'lucide-react';
+import MotionSection from './MotionSection';
 
 const BenefitsSection: React.FC = () => {
   const advantages = [
@@ -36,7 +37,7 @@ const BenefitsSection: React.FC = () => {
   ];
 
   return (
-    <section id="benefits" className="py-16 lg:py-24 bg-[#FFFFFF]">
+    <MotionSection id="benefits" className="py-16 lg:py-24 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-16 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -65,7 +66,7 @@ const BenefitsSection: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 

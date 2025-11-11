@@ -12,6 +12,38 @@ import Features from '@/components/Features';
 export default function Home() {
   return (
     <>
+      {/* SEO: SiteNavigationElement for sitelinks */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            'itemListElement': [
+              {
+                '@type': 'SiteNavigationElement',
+                'name': 'Pourquoi Nexact',
+                'url': 'https://nexact.ci/#about'
+              },
+              {
+                '@type': 'SiteNavigationElement',
+                'name': "S'inscrire",
+                'url': 'https://app.nexact.ci/signup'
+              },
+              {
+                '@type': 'SiteNavigationElement',
+                'name': 'Se connecter',
+                'url': 'https://app.nexact.ci/login'
+              },
+              {
+                '@type': 'SiteNavigationElement',
+                'name': 'Termes et conditions',
+                'url': 'https://nexact.ci/terms'
+              }
+            ]
+          })
+        }}
+      />
       <div className="min-h-screen bg-white">
         {/* Header Navigation */}
           <Header />

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import MotionSection from './MotionSection';
 
 const FinalCTASection: React.FC = () => {
   // Array of profile images for the circular display
@@ -23,7 +24,7 @@ const FinalCTASection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-[#F5F9FF]">
+    <MotionSection className="py-16 lg:py-24 bg-[#F5F9FF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center mx-6">
           {/* Left Column - Content */}
@@ -75,7 +76,7 @@ const FinalCTASection: React.FC = () => {
 
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 
