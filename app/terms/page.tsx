@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export default function TermsPage() {
     <main className="min-h-screen bg-white">
       <section className="py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-4">Termes et Conditions d&apos;Utilisation</h1>
+          <h1 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Termes et Conditions d&apos;Utilisation</h1>
           <p className="text-sm text-gray-600 mb-8">Date d&apos;entrée en vigueur : [Date]</p>
 
           <p className="text-[#282828] opacity-80 leading-relaxed mb-4">
@@ -23,7 +24,7 @@ export default function TermsPage() {
             Veuillez lire attentivement ces Conditions avant d&apos;utiliser nos services. En accédant à la Plateforme et en utilisant nos services, vous acceptez d&apos;être lié par ces Conditions.
           </p>
 
-          <h2 className="text-2xl font-bold mb-3">1. Acceptation et Objet</h2>
+          <h2 className="text-2xl font-bold text-[#282828] mb-3">1. Acceptation et Objet</h2>
           <p className="text-[#282828] opacity-80 leading-relaxed mb-4">
             L&apos;objet des présentes Conditions est de définir les modalités et conditions d&apos;accès et d&apos;utilisation de la Plateforme par l&apos;Utilisateur (ci-après l&apos; "Utilisateur" ou "Vous"). L&apos;accès à la Plateforme est subordonné à l&apos;acceptation sans réserve des présentes Conditions.
           </p>
@@ -31,14 +32,14 @@ export default function TermsPage() {
             L&apos;Utilisateur déclare disposer de la capacité juridique et des autorisations nécessaires pour s&apos;engager au titre des présentes Conditions.
           </p>
 
-          <h2 className="text-2xl font-bold mb-3">2. Accès et Création de Compte</h2>
-          <h3 className="text-xl font-semibold mb-2">2.1. Conditions d&apos;Accès</h3>
+          <h2 className="text-2xl font-bold text-[#282828] mb-3">2. Accès et Création de Compte</h2>
+          <h3 className="text-xl font-semibold text-[#282828] mb-2">2.1. Conditions d&apos;Accès</h3>
           <ul className="list-disc pl-6 text-[#282828] opacity-80 leading-relaxed mb-4">
             <li>Un équipement informatique ou mobile compatible.</li>
             <li>Une connexion internet satisfaisante.</li>
             <li>L&apos;acceptation des présentes Conditions et de la Politique de Confidentialité de NEXACT.</li>
           </ul>
-          <h3 className="text-xl font-semibold mb-2">2.2. Compte Utilisateur</h3>
+          <h3 className="text-xl font-semibold text-[#282828] mb-2">2.2. Compte Utilisateur</h3>
           <p className="text-[#282828] opacity-80 leading-relaxed mb-4">
             La création d&apos;un Compte Utilisateur est nécessaire pour accéder à l&apos;ensemble des services (évaluation, suivi, certification). L&apos;Utilisateur doit fournir des informations exactes, complètes et à jour (Nom, Prénom, Adresse e-mail, etc.).
           </p>
